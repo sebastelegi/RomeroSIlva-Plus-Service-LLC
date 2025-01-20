@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang = "Es" style = "background-color: rgba(242,241,236,255);">
+    <head>
+        <link rel = "stylesheet" href = "style.css">
+        <script src = "script.js"></script>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init({
+        publicKey: "kcI2c0SoRwe-HZAR2",
+            });
+                })();
+</script>
+    </head>
+    <body>
+        <img src="logo.jfif" alt="logo" element id = "logo">
+        
+        <div>
+            <nav id = "navbar">
+                <ul style="top:0; left: 600px;">
+                    <li><a href = "index.html">Inicio</a></li>
+                    <li><a href="Servicios.html">Servicios</a></li>
+                    <li><a href ="BOI.html">BOI</a></li>
+                    <li><a href ="Checklist.html">Checklist</a></li>
+                    <li><a href ="Contactos.html">Contactos</a></li>
+                    <li><a>Blog</a></li>
+            </nav>
+        </div>
+
+        <div id = "checklist" class = "serv">
+            <h2>Contáctanos!</h2>
+            <p>Si estas interesado en realizar algun servicio con nosotros, puedes contactarnos por estos medios:</p>
+            <h2>Email</h2>
+            <p><a href="mailto:romerosilvaplusservicesllc@gmail.com">romerosilvaplusservicesllc@gmail.com</a></p>
+            <h2>Instagram</h2>
+            <p><a href="https://www.instagram.com/romero_silva_plus_services_llc/" target = "_blank">@romero_silva_plus_services_llc</a></p>
+            <p> También pudes escribirnos usando el formulario a la derecha</p>
+        </div>
+
+        <div class = "container">
+            <input id = "nombre" type = text placeholder="Nombre y apellido" >
+            <input id = "email" type = text placeholder="Email" >
+            <input id = "telefono" type = text placeholder="Telefono" >
+            <textarea id = "mensaje" name = message cols="50" rows="60" placeholder="Mensaje"></textarea>
+            <br>
+            <br>
+            <button id="info" type="submit" onclick="informacion()">Submit</button>
+        </div>
+        
+        
+        
+    </body>
+
+
+
+
+
+
+</html>
