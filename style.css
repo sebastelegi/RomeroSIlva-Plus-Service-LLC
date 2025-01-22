@@ -1,27 +1,28 @@
 html, body{
-    width: 100%;
+    width: 1000px;
     height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x:hidden;
-    overflow-y: hidden;
+    overflow-y: visible;
     
 }
 
 #logo{
+    margin: 0;
     width : 400px;
     height : 150px;
     position : relative;
     top: 10px;
     left: 10px;
-    margin: 0;
+    
 }
 #navbar{
     
     ul{
         position: absolute;
         top: 0px;
-        left: 0px;
+        left: 600px;
         width: 100%;
         list-style-type: none;
         margin: 0;
@@ -76,11 +77,7 @@ html, body{
     border: 5px solid #111;
     
 }
-#ip{
-    position: relative;
-    left:60px;
-    top: 50px;
-}
+
 .serv{    
 h2{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -91,10 +88,34 @@ h2{
     }
 
 }
+#ip{
+    position: relative;
+    left:60px;
+    top: 50px;
+}
 #ip2{
     position: absolute;
     left:390px;
     top: 202px;
+}
+
+#ip3{
+    position: absolute; left:800px; top: 202px;
+}
+#ip4{
+    position: absolute; left:390px; top: 402px;
+}
+#ip5{
+    position: absolute; left:800px; top: 402px;
+}
+#ip6{
+    position: absolute; left:50px; top: 402px;
+}
+#ip7{
+    position: absolute; left:50px; top: 602px;
+}
+#ip8{
+    position: absolute; left:390px; top: 602px;
 }
 
 #BOI_foto{
@@ -182,3 +203,218 @@ h2{
     
 }
 
+@media (max-width : 600px){
+    
+    html, body{
+        margin: 0px;
+        padding: 0px;
+        width: 700px;
+        height: 100%;
+        overflow-y: scroll;
+       
+        
+    }
+    
+    #logo{
+        margin: 0;
+        padding: 0;
+        width : 400px;
+        height : 150px;
+        position : relative;
+        top: 100px;
+        left: 150px;
+        opacity: .5;
+        
+    }
+    #navbar{
+        
+        ul{
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 0px;
+            left: 80px;
+            width: 600px;
+            list-style-type: none;
+            
+            
+            
+        }
+        li{
+            
+            float:left;
+            background-color: rgba(29,64,83,255);
+        }
+        li a{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 20px 25px;
+        }
+        li a:hover {
+            background-color: #111;
+            cursor: pointer;
+          }
+    
+    
+    
+    
+    }
+    #titulo{
+        position: absolute;
+        left:60px;
+        top: 300px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: gray;
+    }
+    #des{
+        position: absolute;
+        left:60px;
+        top: 400px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: gray;
+        width: 600px;
+        text-align: justify;
+        
+    }
+    #icono{
+        position: absolute;
+        left:200px;
+        top: 900px;
+        width: 350px;
+        height: 450px;
+        border: 5px solid #111;
+        
+    }
+    
+    .serv{    
+    h2{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgba(29,64,83,255);
+        }
+        ul{
+            list-style-type: circle;
+        }
+    
+    }
+    #ip{
+        position: relative;
+        left:50px;
+        top: 200px;
+    }
+    #ip2{
+        position: absolute;
+        left:380px;
+        top: 350px;
+        width: 300px;
+    }
+    
+    #ip3{
+        position: absolute; left:50px; top: 600px;
+    }
+    #ip4{
+        position: absolute; left:400px; top: 580px;
+        width: 300px;
+    }
+    #ip5{
+        position: absolute; left:50px; top: 800px;
+    }
+    #ip6{
+        position: absolute; left:400px; top: 800px;
+        width: 300px;
+    }
+    #ip7{
+        position: absolute; left:50px; top: 1000px;
+    }
+    #ip8{
+        position: absolute; left:370px; top: 1000px;
+        width: 300px;
+    }
+    
+    #BOI_foto{
+        width : 700px;
+        height : 500px;
+        position : absolute;
+        top: 200px;
+        left: 0px;
+        margin: 0;
+        opacity: 0.1;
+        
+    
+    }
+    #BOI_preguntas{
+        width : 600px;
+        height : 500px;
+        position : absolute;
+        top: 250px;
+        left: 80px;
+        margin: 0;
+        font-size: large;
+        text-align: justify;
+    }
+    
+    #checklist{
+        width : 500px;
+        height : 500px;
+        position : absolute;
+        top: 300px;
+        left: 100px;
+        margin: 0;
+        font-size: large;
+        text-align: justify;
+    }
+    
+    .container{
+        position: absolute;
+        left:100px;
+        top: 700px;
+        width: 500px;
+        height: 400px;
+        border: 5px solid #111;
+        background-color:rgba(242,241,236,255);
+        text-align: center;
+        display: inline-block;
+        border-color: rgba(29,64,83,255);
+    
+        input{
+            margin:10px;
+            width:400px;
+            height:40px;
+            border: 3px solid;
+            border-color: rgba(29,64,83,255);
+            
+    
+        }
+    
+        #mensaje{
+            margin:10px;
+            margin-bottom:0px ;
+            width:400px;
+            height:120px;
+            text-align: justify;
+            position:relative;
+            border: 3px solid;
+            border-color: rgba(29,64,83,255);
+        }
+    
+        button{
+            width: 100px;
+            margin: 0px;
+            margin-top: 0px;
+            border: rgba(29,64,83,255);
+            background-color: rgba(29,64,83,255);
+            color: white;
+            cursor: pointer;
+            
+            
+            
+        }
+        button:hover{
+            background-color: aqua;
+        }
+        
+        
+    }
+
+}
